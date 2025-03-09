@@ -1,0 +1,885 @@
+/* Estilos de la Pagina Principal */
+
+/* Estilos Barra Principal (navbar) */
+
+.Barra_principal {
+    background-color: #833AB4;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+.Barra_principal img {
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.Buscador_barra_principal {
+    color: rgb(168, 168, 168);
+    text-transform: uppercase;
+    align-self: flex-end;
+    position: relative;
+}
+
+.iconoBusqueda {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.Buscador_barra_principal input {
+    padding: 5px;
+    width: 250px;
+    border-radius: 15px;
+}
+
+.menuPlegableCelular {
+    display: none;
+}
+
+.botonesBarraPrincipal {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    align-self: flex-end;
+}
+
+.botonesBarraPrincipal button {
+    font-size: 15px;
+    color: white;
+    background-color: #833AB4;
+    border: 1.5px solid;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 15px;
+    border-color: rgb(168, 168, 168);
+
+    &:hover {
+        background-color: rgb(168, 168, 168);
+        border: 1.5px solid black;
+    }
+
+}
+
+.contenedorMasOpciones {
+    position: relative;
+}
+
+.menuBarraPrincipal {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0s 1s;
+}
+
+.contenedorMasOpciones:hover .menuBarraPrincipal {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.menuBarraPrincipal a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #2d3748;
+}
+
+.menuBarraPrincipal a:hover {
+    background-color: #edf2f7;
+    border-radius: 15px;
+}
+
+/* Estilos Barra Lateral Izquierda */
+
+.Barra_lateral_izquierda {
+    background-color: #69C9D0;
+    width: 200px;
+    height: 600px;
+    padding: 10px;
+    margin-left: -8px;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    position: fixed;
+    top: 62px;
+}
+
+.fotoDePerfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.contenedorPerfil {
+    cursor: pointer;
+    display: flex;
+    padding-left: 5px;
+    gap: 10px;
+    height: 10vh;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+
+    &:hover {
+        background-color: #4a8f94;
+        border-radius: 15px;
+    }
+}
+
+.contenedorRedes {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedorRedes a {
+    text-decoration: none;
+}
+
+h1 {
+    box-shadow: 1px 1px 5px -1px grey;
+    border-radius: 10px;
+
+    &::before {
+        content: "⬇️";
+    }
+
+    &::after {
+        content: "⬇️";
+    }
+
+    &:hover {
+        box-shadow: 2px 2px 10px 1px grey;
+    }
+}
+
+.iconoRedesBarraLateralIzq {
+    width: 75px;
+    height: 75px;
+    border-radius: 25%;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* Todos los Iconos de las Redes */
+
+.accesosDirectosBLI {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: solid rgb(179, 178, 178);
+    border-radius: 15px;
+    background-color: aliceblue;
+    padding-left: 10px;
+    margin-top: 15px;
+
+    &:hover {
+        background-color: rgb(179, 178, 178);
+    }
+}
+
+/* Estilos Barra lateral derecha */
+
+.Barra_lateral_derecha {
+    background-color: #69C9D0;
+    width: 200px;
+    height: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    position: fixed;
+    top: 62px;
+    right: 0px;
+    z-index: 1;
+}
+
+/* Publicaciones Parte Principal */
+
+main {
+    position: static;
+    max-width: 883px;
+    padding: 10px;
+    margin-left: 212px;
+    margin-top: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.contenedorPublicacion {
+    margin-top: 15px;
+    border: solid 0.5px rgb(212, 211, 211);
+    box-shadow: 1px 1px 10px rgb(212, 211, 211);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.contenedorPublicacion textarea {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    background-color: aliceblue;
+    border: 0.5px groove rgb(231, 231, 231);
+    padding: 5px;
+    padding-left: 10px;
+    width: 250px;
+    height: 5vh;
+
+    &::placeholder {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        font-weight: normal;
+    }
+}
+
+.contenedorPublicacionPerfil {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.botonEnviar {
+    background-color: #e91717;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    width: 40px;
+    height: 40px;
+
+    &:hover {
+        background-color: #a30c0c;
+        color: aliceblue;
+    }
+}
+
+.botonEnviar svg {
+    fill: white;
+}
+
+.contenedorPublicacionOpciones {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.contenedorPublicacionOpciones p {
+    cursor: pointer;
+    color: #757f91;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-right: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 3s ease;
+
+    &:hover {
+        background-color: #e7e5e5;
+        transition: background-color 0.5s ease;
+    }
+}
+
+.contenedorPublicacionOpciones span {
+    justify-content: center;
+    font-size: 25px;
+    margin-top: -10px;
+    padding: 5px;
+}
+
+/* Para Celulares */
+
+@media (max-width: 450px) {
+    .Barra_principal {
+        justify-content: flex-start;
+        padding-left: 25px;
+    }
+    
+    .menuPlegableCelular {
+        position: relative;
+        display: initial;
+        
+    }
+    .botonOpcionesCelular {
+        background-color: #833AB4;
+        border: 0.5px solid #833AB4;
+        visibility: visible;
+        margin-left: -20px;
+        margin-top: -10px;
+        font-size: 22px;
+        &:hover {
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+        &:active {
+            border: 1px;
+            box-shadow: 1px 1px 10px 5px grey;
+        }
+    }
+
+    .menuPlegableOpciones {
+        position: absolute;
+        top: 33px;
+        margin-top: -8px;
+        right: 0;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 150px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.5s ease, visibility 0s 1s;
+    }
+
+    .menuPlegableCelular:hover .menuPlegableOpciones {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+
+    .menuPlegableOpciones a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #2d3748;
+        border-radius: 10px;
+    }
+
+    .menuPlegableOpciones a:hover {
+        background-color: #edf2f7;
+    }
+
+
+
+    .Barra_lateral_derecha {
+        display: none;
+    }
+
+    .Barra_lateral_izquierda {
+        display: none;
+    }
+
+    main {
+        display: initial;
+    }
+
+    section {
+        margin: 15px;
+    }
+
+    .contenedorPublicacion {
+        margin-top: 55px;
+    }
+
+    .botonesBarraPrincipal {
+        display: none;
+    }
+
+
+    .contenedorPublicacion hr {
+        display: none;
+    }
+
+    .contenedorPublicacion br {
+        display: none;
+    }
+
+    .contenedorPublicacionOpciones {
+        margin-left: -10px;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 115px 70px 100px;
+        margin-left: 7.5px;
+
+        &:focus {
+            background-color: #e7e5e5;
+            transition: background-color 0.5s ease-out;
+        }
+    }
+
+    .contenedorPublicacionOpciones p {
+        border: 1px solid rgb(228, 226, 226);
+        display: flex;
+        align-items: flex-start;
+        padding: 5px;
+    }
+
+    .contenedorPublicacionOpciones span {
+        display: none;
+    }
+
+    .contenedorPublicacionOpciones p {
+        font-size: 12px;
+
+    }
+}
+
+/* Estilos para Pulicacion de Facebook */
+
+.facebookTransparente {
+    margin-left: 30px;
+    width: 150px;
+    height: 50px;
+    opacity: 0.2;
+}
+
+.postFacebook {
+    width: 100%;
+    max-width: 624px;
+    background: white;
+    padding: 15px;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header-Facebook {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic-Facebook {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-content-Facebook img {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.post-footer-Facebook {
+    margin-top: 10px;
+}
+
+.comment-box-Facebook {
+    display: flex;
+    margin-top: 10px;
+}
+
+.comment-box-Facebook input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.comment-box-Facebook button {
+    background: #1877f2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 450px) {
+    .postFacebook {
+        max-width: 450px;
+    }
+}
+
+/* Estilos para Publicacion de Instagram*/
+
+.instagramTransparente {
+    margin-left: 30px;
+    width: 150px;
+    height: 75px;
+    opacity: 0.4;
+    border-radius: 15px;
+}
+
+.postInstagram {
+    width: 100%;
+    max-width: 624px;
+    background: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.post-header-Instagram {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-pic-Instagram {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #e1306c;
+}
+
+.post-content-Instagram img {
+    width: 100%;
+}
+
+.post-footer-Instagram {
+    padding: 10px;
+}
+
+.iconsInstagram {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.iconsInstagram img {
+    width: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.likesInstagram {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.captionInstagram {
+    font-size: 14px;
+}
+
+.comment-box-Instagram {
+    display: flex;
+    margin-top: 10px;
+}
+
+.comment-box-Instagram input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-top: 1px solid #dbdbdb;
+    outline: none;
+}
+
+@media (max-width: 450px) {
+    .postInstagram {
+        max-width: 450px;
+    }
+}
+
+/* Estilos publicacion de Facebook with video */
+
+.postFacebookVideo {
+    width: 100%;
+    max-width: 624px;
+    background: white;
+    padding: 15px;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header-FacebookVideo {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic-FacebookVideo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-content-FacebookVideo video {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.post-footer-FacebookVideo {
+    margin-top: 10px;
+}
+
+.comment-box-FacebookVideo {
+    display: flex;
+    margin-top: 10px;
+}
+
+.comment-box-FacebookVideo input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.comment-box-FacebookVideo button {
+    background: #1877f2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 450px) {
+    .postFacebookVideo {
+        max-width: 450px;
+    }
+}
+
+/* Estilos Publicacion Instagram Dark with Video  */
+
+.postInstagramDarkVideo {
+    width: 100%;
+    max-width: 624px;
+    background: #121212;
+    border: 1px solid #262626;
+    border-radius: 8px;
+    overflow: hidden;
+    color: white;
+}
+
+.post-header-InstagramDarkVideo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-pic-InstagramDarkVideo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #e1306c;
+}
+
+.post-content-InstagramDarkVideo video {
+    width: 100%;
+    background: #000;
+}
+
+.post-footer-InstagramDarkVideo {
+    padding: 10px;
+}
+
+.iconsInstagramDarkVideo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.iconsInstagramDarkVideo img {
+    width: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.likesInstagramDarkVideo {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.captionInstagramDarkVideo {
+    font-size: 14px;
+}
+
+.comment-box-InstagramDarkVideo {
+    display: flex;
+    margin-top: 10px;
+}
+
+.comment-box-InstagramDarkVideo input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-top: 1px solid #262626;
+    background: #121212;
+    color: #fff;
+    outline: none;
+}
+
+@media (max-width: 450px) {
+    .postInstagramDarkVideo {
+        max-width: 450px;
+    }
+}
+
+/* Estilos de Whatsapp  */
+
+.whatsapp-container {
+    width: 100%;
+    max-width: 624px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tituloWhatsapp {
+    background: #075e54;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.tituloWhatsapp h2 {
+    margin: 0;
+}
+
+.tituloWhatsapp h2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.chat-list {
+    padding: 10px;
+}
+
+.chat-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.chat-item:hover {
+    background: #f5f5f5;
+}
+
+.chat-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-info {
+    flex-grow: 1;
+}
+
+.chat-info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.chat-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.time {
+    font-size: 12px;
+    color: #999;
+}
+
+@media (max-width: 450px) {
+    .whatsapp-container {
+        max-width: 100%;
+        border-radius: 0;
+    }
+}
+
+/* FOOTER */
+
+.idiomas {
+    background: #d6d6d6;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #868686;
+    max-width: 624px;
+    margin-left: 335px;
+}
+
+.selector_de_idiomas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.selector_de_idiomas a {
+    text-decoration: none;
+    color: #606770;
+    font-weight: 500;
+}
+
+.selector_de_idiomas a:hover {
+    text-decoration: underline;
+}
+
+.pie_de_pagina {
+    margin-top: 10px;
+    color: #65676b;
+    font-size: 12px;
+}
+h2 {
+    text-decoration: underline;
+}
+.Desarrolladores {
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.Desarrolladores a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+        color: #1877f2;
+    }
+}
+
+@media (max-width: 450px) {
+    .Desarrolladores li {
+        text-align: start;
+    }
+    .idiomas {
+        width: 350px;
+        margin-left: 15px;
+    }
+}
