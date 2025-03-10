@@ -116,7 +116,7 @@
 
 .Barra_lateral_izquierda {
     background-color: #69C9D0;
-    width: 200px;
+    width: 210px;
     height: 600px;
     padding: 10px;
     margin-left: -8px;
@@ -210,7 +210,7 @@ h1 {
 
 .Barra_lateral_derecha {
     background-color: #69C9D0;
-    width: 200px;
+    width: 210px;
     height: 600px;
     padding: 10px;
     display: flex;
@@ -227,11 +227,12 @@ h2 {
     border-radius: 10px;
     text-decoration: underline;
     padding: 10px;
+    margin-top: -5px;
 }
 
 .Barra_lateral_derecha ol {
-    margin-left: -15px;
-    margin-top: -5px;
+    margin-left: -25px;
+    margin-top: -15px;
 }
 
 .Barra_lateral_derecha li {
@@ -243,6 +244,35 @@ h2 {
     color: #0f325f;
 }
 
+.Barra_lateral_derecha p {
+    text-align: center;
+    margin-top: -15px;
+    color: rgb(94, 89, 89);
+}
+h4 {
+    margin-top: -10px;
+    border: groove;
+    text-align: center;border-radius: 10px;
+}
+
+.Barra_lateral_derecha table {
+    margin-top: -5px;
+    border: 2px solid blue;
+    margin-left: -5px;
+    
+}
+
+.Barra_lateral_derecha thead {
+ font-weight: bold;
+}
+
+.Barra_lateral_derecha tfoot {
+    font-style: italic;
+}
+.Barra_lateral_derecha td {
+    border: 1px solid rgb(95, 95, 95);
+    text-align: center;
+}
 
 
 /* Publicaciones Parte Principal */
