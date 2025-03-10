@@ -222,6 +222,29 @@ h1 {
     z-index: 1;
 }
 
+h2 {
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 10px;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+.Barra_lateral_derecha ol {
+    margin-left: -15px;
+    margin-top: -5px;
+}
+
+.Barra_lateral_derecha li {
+    padding: 5px;
+    font-size: 15px;
+}
+
+.Barra_lateral_derecha a {
+    color: #0f325f;
+}
+
+
+
 /* Publicaciones Parte Principal */
 
 main {
@@ -863,9 +886,6 @@ main {
     justify-content: center;
 }
 
-h2 {
-    text-decoration: underline;
-}
 
 .Desarrolladores {
     border: 1px solid grey;
