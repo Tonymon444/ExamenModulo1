@@ -330,12 +330,13 @@ main {
         justify-content: flex-start;
         padding-left: 25px;
     }
-    
+
     .menuPlegableCelular {
         position: relative;
         display: initial;
-        
+
     }
+
     .botonOpcionesCelular {
         background-color: #833AB4;
         border: 0.5px solid #833AB4;
@@ -343,10 +344,12 @@ main {
         margin-left: -20px;
         margin-top: -10px;
         font-size: 22px;
+
         &:hover {
             border: 1px solid grey;
             border-radius: 5px;
         }
+
         &:active {
             border: 1px;
             box-shadow: 1px 1px 10px 5px grey;
@@ -856,19 +859,25 @@ main {
     margin-top: 10px;
     color: #65676b;
     font-size: 12px;
+    display: flex;
+    justify-content: center;
 }
+
 h2 {
     text-decoration: underline;
 }
+
 .Desarrolladores {
     border: 1px solid grey;
     border-radius: 15px;
     padding: 5px;
+    text-align: center;
 }
 
 .Desarrolladores a {
     text-decoration: none;
     color: black;
+
     &:hover {
         color: #1877f2;
     }
@@ -878,6 +887,7 @@ h2 {
     .Desarrolladores li {
         text-align: start;
     }
+
     .idiomas {
         width: 350px;
         margin-left: 15px;
