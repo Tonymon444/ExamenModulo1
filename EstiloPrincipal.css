@@ -280,14 +280,15 @@ h4 {
 main {
     position: static;
     max-width: 883px;
-    padding: 10px;
     margin-left: 212px;
-    margin-top: 52px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
+    width: calc(100vw - 400px);
+    padding: 95px;
+    box-sizing: border-box;
 
 }
 
@@ -379,25 +380,26 @@ main {
 /* Para Celulares */
 
 @media (max-width: 450px) {
+    .botonesBarraPrincipal {
+        display: none;
+    }
+
     .Barra_principal {
-        justify-content: flex-start;
-        padding-left: 25px;
+        justify-content: space-evenly;
     }
 
     .menuPlegableCelular {
         position: relative;
-        display: initial;
-
+        display: flex;
     }
 
     .botonOpcionesCelular {
         background-color: #833AB4;
         border: 0.5px solid #833AB4;
         visibility: visible;
-        margin-left: -20px;
-        margin-top: -10px;
         font-size: 22px;
-
+        margin-top: 15px;
+        margin-right: 5px;
         &:hover {
             border: 1px solid grey;
             border-radius: 5px;
@@ -442,32 +444,17 @@ main {
         background-color: #edf2f7;
     }
 
-
-
-    .Barra_lateral_derecha {
-        display: none;
-    }
-
-    .Barra_lateral_izquierda {
-        display: none;
-    }
-
     main {
-        display: initial;
-    }
-
-    section {
-        margin: 15px;
+        margin: 0;
+        width: auto;
+        padding: 10px;
+        box-sizing: initial;
     }
 
     .contenedorPublicacion {
         margin-top: 55px;
+        width: 95%;
     }
-
-    .botonesBarraPrincipal {
-        display: none;
-    }
-
 
     .contenedorPublicacion hr {
         display: none;
@@ -478,10 +465,7 @@ main {
     }
 
     .contenedorPublicacionOpciones {
-        margin-left: -10px;
         margin-top: 10px;
-        display: grid;
-        grid-template-columns: 115px 70px 100px;
         margin-left: 7.5px;
 
         &:focus {
@@ -504,6 +488,16 @@ main {
     .contenedorPublicacionOpciones p {
         font-size: 12px;
 
+    }
+    .iconoBusqueda {
+        display: none;
+    }
+    .Barra_lateral_derecha {
+        display: none;
+    }
+
+    .Barra_lateral_izquierda {
+        display: none;
     }
 }
 
@@ -574,6 +568,7 @@ main {
 @media (max-width: 450px) {
     .postFacebook {
         max-width: 450px;
+        padding: 10px;
     }
 }
 
@@ -718,6 +713,7 @@ main {
 @media (max-width: 450px) {
     .postFacebookVideo {
         max-width: 450px;
+        padding: 10px;
     }
 }
 
@@ -939,7 +935,7 @@ main {
     }
 
     .idiomas {
-        width: 350px;
-        margin-left: 15px;
+        width: auto;
+        margin: 0;
     }
 }
